@@ -1,14 +1,7 @@
-# 3의 배수: fizz done
-# 5의 배수: buzz
-# 15의 배수: fizzbuzz done
-# 나머지: 숫자(1-45) done
+# if ~ else 1회로 fizzbuzz 
 
-for i in range(1,45+1):
-    if i%15==0:
-        print('fizzbuzz')
-    elif i%3==0:
-        print('fizz')
-    elif i%5==0:
-        print('buzz')
+for i in range(1, 45+1) :
+    if (i%3==0) or (i%5==0) :
+        print('Fizz' * (i % 5 == 0) + 'Buzz' * (i % 3 == 0))
     else:
         print(i)
